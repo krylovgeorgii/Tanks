@@ -1,11 +1,11 @@
 #pragma once
 
 #include "ofMain.h"
-#include "../Player.h"
-#include "../MovableBarrierr.h"
+#include "Player.h"
+#include "Barrier.h"
 
-class ofApp : public ofBaseApp
-{
+class ofApp : public ofBaseApp {
+private:
 	const int W = 1920;
 	const int H = 1080;
 
@@ -13,7 +13,7 @@ public:
 	void setup();
 	void update();
 	void draw();
-
+	
 	void keyPressed(int key);
 	void keyReleased(int key);
 	void mouseMoved(int x, int y);
@@ -33,10 +33,10 @@ public:
 	inline int getH() const {
 		return H;
 	}
-
-	template<typename T = double>
+	
 	void move();
 
-	Player p1{ W - 1, H - 1 };
+	Player p1 { W - 1, H - 1 } ;
 	vector<MovableBarrier> barriers;
 };
+/* END FILE offApp.h */
