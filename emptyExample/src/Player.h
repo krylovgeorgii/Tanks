@@ -1,7 +1,7 @@
 #pragma once
 #include "ofMain.h"
 
-class ofApp;
+//class ofApp;
 
 class Player {
 public:
@@ -41,7 +41,7 @@ public:
 	double getOldUY() const { return oldUY; }
 	double getOldDY() const { return oldDY; } 
 
-private:
+//private:
         double x, y;        
 	double lx, rx, uy, dy;
 	double speed;
@@ -53,6 +53,6 @@ private:
 
         ofImage tankIcon;
 
-	friend class ofApp;
+	//friend class ofApp;
 };
 /* END FILE Player.h */
